@@ -1,0 +1,12 @@
+There was no COMMENTS file so I created one.  Since much of this test is things that I only have a passing familarity with
+ I thought it might be helpful for y'all if I explain my troubleshooting process so in case I go down a rabbithole you can see why.
+
+ First thing, I believe in TDD but as Websockets is in JS I am unsure how to use Mocha to test JS inside a Rails app so I will skip that for now.
+
+ Currently reading Websocket docs at http://guides.rubyonrails.org/action_cable_overview.html
+
+ Going through the docs and the app code it looks like the connection language is ok, but is missing EfinChannel language (I am assuming based on docs) and the
+ subsciber language in app/assets/javascripts/cable/subscriptions
+
+
+
