@@ -8,5 +8,26 @@ There was no COMMENTS file so I created one.  Since much of this test is things 
  Going through the docs and the app code it looks like the connection language is ok, but is missing EfinChannel language (I am assuming based on docs) and the
  subsciber language in app/assets/javascripts/cable/subscriptions
 
+ Set up subscriber.
+
+I am a bit confused by setting up the stream.  There is a efin.js file in app/channels/ and I don't see in the docs that it is suppose to be there.  It's language looks like what
+should be in the cable/subscriptions file so it might be in the wrong place or the documentation isn't clear.  I think my best best is to follow the documentation so I will
+create a seperate stream first and then play with the efin.js file
+
+I booted up the server and have the following comments:
+EfinChannel is transmitting the subscription confirmation
+EfinChannel is streaming from
+EfinChannel#receive({"household"=>"5", "income"=>"1000"})
+
+So that looks good.  I should have checked that before I did anything to make sure that is all new.
+Now I have data being received, I just need to make sure  I can pass it along.  Looking at the efin.js file
+the JS language will auto replace the text using jQuery, I just need to get it there $('#efin').text(data.body)
+and connect that file somehow (which is maybe already connected, even if it isn't the same layout as the docs)
+
+
+
+
+
+
 
 
