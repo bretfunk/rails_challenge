@@ -46,7 +46,10 @@ shown on the page
 
 Installing Faraday for post request, also testing with Postman
 Cant seem to get the format correct, even with using the exact JSON hash used in the example.
-Will keep tweaking it.
+Will keep tweaking it.  Still having issues with the format, no idea why it isn't working, single URL or any other way.
+I am going to build out the service to take a break from the post attempts.  Hoping for divine inspiration.
+
+
 
 
 
