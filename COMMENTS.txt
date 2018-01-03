@@ -49,6 +49,15 @@ Cant seem to get the format correct, even with using the exact JSON hash used in
 Will keep tweaking it.  Still having issues with the format, no idea why it isn't working, single URL or any other way.
 I am going to build out the service to take a break from the post attempts.  Hoping for divine inspiration.
 
+Built the Service.  I have two issues that I have an hour to work on, the first is to
+figure out the post requets formatting, for the life of me I don't know what the problem is.
+Secondly, I need to figure out how to return the Service API call results to the JS websocket code
+that posts to the page.  Normally the service returns that info but it is not working for me,
+that could very well be because the post request isn't sucessful but I think it is something else.
+
+Since I am nearing the end of my time, if I don't figure these out shortly I will switch to writing tests so
+that I am still productive.
+
 
 
 
