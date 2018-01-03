@@ -24,6 +24,26 @@ Now I have data being received, I just need to make sure  I can pass it along.  
 the JS language will auto replace the text using jQuery, I just need to get it there $('#efin').text(data.body)
 and connect that file somehow (which is maybe already connected, even if it isn't the same layout as the docs)
 
+debugger doesn't work in the JS, attempting to see if the efin.js file is actually capturing the data
+
+I noticed that the server is not puts-ing 'subscribed' or 'connected'.  I feel like that means something
+since that is suppose to happen yet the server is still receiving the data inputed by the client
+
+After looking on StackOverflow I realized that the efin_channel.rb file in the Ruby channel section
+is suppose to stream_from 'efin', which is where the JS comes from.  That was not in the Ruby docs!
+
+Data still isn't beign recieved in the js file.
+
+Think I figured out the data transfer issue, I needed to broadcast from the Ruby files to the JS files (not in the Docs!).
+I think from the Ruby section I need to call the background worker that does the post API request.
+
+
+
+
+
+
+
+
 
 
 

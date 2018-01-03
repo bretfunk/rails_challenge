@@ -5,13 +5,17 @@ $(function() {
     },
     disconnected: function() {},
     received: function(data) {
+      //debugger
+      //alert is working, data is not correct
+      //alert(data.household)
+      //alert(data.income)
       $('#efin').text(data.body)
     }
   });
   $( "form" ).on( "submit", function( e ) {
     e.preventDefault();
     var data = {};
-    $( this ).serializeArray().map(function(x){data[x.name] = x.value;}); 
+    $( this ).serializeArray().map(function(x){data[x.name] = x.value;});
     App.efin.send(data)
   });
 })
