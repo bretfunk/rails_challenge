@@ -14,7 +14,8 @@ class OddballService
     end
 
     def post_request
-      parse(@conn.post "/", data)
+      byebug
+      parse(@conn.post "/", params: { data })
     end
 
     def parse(response)
