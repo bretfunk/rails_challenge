@@ -37,6 +37,18 @@ Data still isn't beign recieved in the js file.
 Think I figured out the data transfer issue, I needed to broadcast from the Ruby files to the JS files (not in the Docs!).
 I think from the Ruby section I need to call the background worker that does the post API request.
 
+Setting up the background worker using Action Job.  Pretty straightforward but won't let me
+byebug to make sure the data is correct (luckly I saw it in the server log)(Update, it's because
+I didn't start Redis, duh Bret). This means you, my dear user, will have to use Redis to make the app work.
+My question now
+is if I make the API call then how do I get that data back to the websocket's broadcast to be
+shown on the page
+
+Installing Faraday for post request, also testing with Postman
+Cant seem to get the format correct, even with using the exact JSON hash used in the example.
+Will keep tweaking it.
+
+
 
 
 

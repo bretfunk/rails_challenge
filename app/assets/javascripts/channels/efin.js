@@ -9,6 +9,7 @@ $(function() {
       //alert is working, data is not correct
       //alert(data.household)
       //alert(data.income)
+      //$('#efin').text(data.income)
       $('#efin').text(data.body)
     }
   });
